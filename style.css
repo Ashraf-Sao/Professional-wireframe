@@ -1,0 +1,78 @@
+*,
+*::after
+*::before {
+    box-sizing: border-box;
+}
+
+container {
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    background: #ccc;
+  }
+  header nav {
+    text-align: right;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #585454;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  header nav a:hover {
+    color: rgb(117, 98, 98);
+    background: #3d4346;
+  }
+  
+body {
+
+    width: 960px;
+    margin: auto;
+}
+
+header img {
+    width: 80px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+}
+
+header nav {
+    text-align: right;
+    
+    }
+img {
+    width: 100;
+}
+
+main section :nth-child(2) {
+    width: 30 px;
+    display-grid
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+main section :nth-child(4) {
+    width: 30 px;
+    display-grid
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+footer {
+    grid: 1fr;
+    background-color: #dddddd;
+}
